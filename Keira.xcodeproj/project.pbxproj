@@ -7,18 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB262B20F71600A07A6C /* ControllersView.swift */; };
+		9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */; };
+		9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */; };
+		9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */; };
 		957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F72B1FB31D00B48448 /* KeiraApp.swift */; };
 		957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F92B1FB31D00B48448 /* ContentView.swift */; };
 		957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D52FB2B1FB31E00B48448 /* Assets.xcassets */; };
 		957D52FF2B1FB31E00B48448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D52FE2B1FB31E00B48448 /* Preview Assets.xcassets */; };
+		957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D53092B1FBBB500B48448 /* StartTranslationButton.swift */; };
+		957D53172B1FBF4700B48448 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D530D2B1FBF4700B48448 /* Ubuntu-Medium.ttf */; };
+		957D53182B1FBF4700B48448 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D530E2B1FBF4700B48448 /* Ubuntu-Regular.ttf */; };
+		957D53192B1FBF4700B48448 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D530F2B1FBF4700B48448 /* Ubuntu-Bold.ttf */; };
+		957D531A2B1FBF4700B48448 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53102B1FBF4700B48448 /* Ubuntu-Light.ttf */; };
+		957D531B2B1FBF4700B48448 /* Raleway-v4020-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53122B1FBF4700B48448 /* Raleway-v4020-Bold.ttf */; };
+		957D531C2B1FBF4700B48448 /* Raleway-v4020-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53132B1FBF4700B48448 /* Raleway-v4020-Medium.ttf */; };
+		957D531D2B1FBF4700B48448 /* Raleway-v4020-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53142B1FBF4700B48448 /* Raleway-v4020-Light.ttf */; };
+		957D531E2B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53152B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf */; };
+		957D531F2B1FBF4700B48448 /* Raleway-v4020-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */; };
+		957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */; };
+		95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */; };
+		95C233E72B22234B00EFCC75 /* DevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E62B22234B00EFCC75 /* DevicesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9523CB262B20F71600A07A6C /* ControllersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersView.swift; sourceTree = "<group>"; };
+		9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDevicesViewModel.swift; sourceTree = "<group>"; };
+		9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceCell.swift; sourceTree = "<group>"; };
+		9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPickerCell.swift; sourceTree = "<group>"; };
 		957D52F42B1FB31D00B48448 /* Keira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D52F72B1FB31D00B48448 /* KeiraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeiraApp.swift; sourceTree = "<group>"; };
 		957D52F92B1FB31D00B48448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		957D52FB2B1FB31E00B48448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957D52FE2B1FB31E00B48448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		957D53092B1FBBB500B48448 /* StartTranslationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTranslationButton.swift; sourceTree = "<group>"; };
+		957D530D2B1FBF4700B48448 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		957D530E2B1FBF4700B48448 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		957D530F2B1FBF4700B48448 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		957D53102B1FBF4700B48448 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		957D53122B1FBF4700B48448 /* Raleway-v4020-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Bold.ttf"; sourceTree = "<group>"; };
+		957D53132B1FBF4700B48448 /* Raleway-v4020-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Medium.ttf"; sourceTree = "<group>"; };
+		957D53142B1FBF4700B48448 /* Raleway-v4020-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Light.ttf"; sourceTree = "<group>"; };
+		957D53152B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.ttf"; sourceTree = "<group>"; };
+		957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.ttf"; sourceTree = "<group>"; };
+		957D53202B1FBF5400B48448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RalewayFontModifier.swift; sourceTree = "<group>"; };
+		95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBackgroundModifier.swift; sourceTree = "<group>"; };
+		95C233E62B22234B00EFCC75 /* DevicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9523CB252B20F6EC00A07A6C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */,
+				9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		957D52EB2B1FB31D00B48448 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +95,12 @@
 		957D52F62B1FB31D00B48448 /* Keira */ = {
 			isa = PBXGroup;
 			children = (
+				957D53202B1FBF5400B48448 /* Info.plist */,
 				957D52F72B1FB31D00B48448 /* KeiraApp.swift */,
-				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+				957D530B2B1FBF4700B48448 /* Resources */,
+				957D53072B1FBB5700B48448 /* Models */,
+				957D53062B1FBB4E00B48448 /* ViewModels */,
+				957D53052B1FBB4700B48448 /* Views */,
 				957D52FB2B1FB31E00B48448 /* Assets.xcassets */,
 				957D52FD2B1FB31E00B48448 /* Preview Content */,
 			);
@@ -65,6 +113,83 @@
 				957D52FE2B1FB31E00B48448 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		957D53052B1FBB4700B48448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9523CB262B20F71600A07A6C /* ControllersView.swift */,
+				9523CB252B20F6EC00A07A6C /* Cells */,
+				957D53212B1FC01800B48448 /* Modifiers */,
+				957D53082B1FBB8600B48448 /* Buttons */,
+				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		957D53062B1FBB4E00B48448 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		957D53072B1FBB5700B48448 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95C233E62B22234B00EFCC75 /* DevicesManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		957D53082B1FBB8600B48448 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				957D53092B1FBBB500B48448 /* StartTranslationButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		957D530B2B1FBF4700B48448 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				957D530C2B1FBF4700B48448 /* Ubuntu */,
+				957D53112B1FBF4700B48448 /* Raleway */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		957D530C2B1FBF4700B48448 /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				957D530D2B1FBF4700B48448 /* Ubuntu-Medium.ttf */,
+				957D530E2B1FBF4700B48448 /* Ubuntu-Regular.ttf */,
+				957D530F2B1FBF4700B48448 /* Ubuntu-Bold.ttf */,
+				957D53102B1FBF4700B48448 /* Ubuntu-Light.ttf */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		957D53112B1FBF4700B48448 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				957D53122B1FBF4700B48448 /* Raleway-v4020-Bold.ttf */,
+				957D53132B1FBF4700B48448 /* Raleway-v4020-Medium.ttf */,
+				957D53142B1FBF4700B48448 /* Raleway-v4020-Light.ttf */,
+				957D53152B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf */,
+				957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */,
+			);
+			path = Raleway;
+			sourceTree = "<group>";
+		};
+		957D53212B1FC01800B48448 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */,
+				95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +250,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957D531C2B1FBF4700B48448 /* Raleway-v4020-Medium.ttf in Resources */,
+				957D53192B1FBF4700B48448 /* Ubuntu-Bold.ttf in Resources */,
+				957D531B2B1FBF4700B48448 /* Raleway-v4020-Bold.ttf in Resources */,
+				957D531F2B1FBF4700B48448 /* Raleway-v4020-Regular.ttf in Resources */,
+				957D53182B1FBF4700B48448 /* Ubuntu-Regular.ttf in Resources */,
+				957D531E2B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf in Resources */,
 				957D52FF2B1FB31E00B48448 /* Preview Assets.xcassets in Resources */,
 				957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */,
+				957D531A2B1FBF4700B48448 /* Ubuntu-Light.ttf in Resources */,
+				957D531D2B1FBF4700B48448 /* Raleway-v4020-Light.ttf in Resources */,
+				957D53172B1FBF4700B48448 /* Ubuntu-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
+				95C233E72B22234B00EFCC75 /* DevicesManager.swift in Sources */,
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
+				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
 				957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */,
+				9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */,
+				95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */,
+				9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */,
+				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
+				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +412,16 @@
 				DEVELOPMENT_TEAM = WXWB9U632D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keira/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Keira use bluetooth to detect your robots and cameras.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Keira use bluetooth to detect your robots and cameras.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +446,16 @@
 				DEVELOPMENT_TEAM = WXWB9U632D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keira/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Allow Keira use bluetooth to detect your robots and cameras.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Allow Keira use bluetooth to detect your robots and cameras.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
