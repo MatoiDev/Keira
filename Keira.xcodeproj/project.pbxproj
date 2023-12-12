@@ -11,6 +11,7 @@
 		9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */; };
 		9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */; };
 		9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */; };
+		952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F70872B26460E007F1A46 /* GetDeviceClass.swift */; };
 		957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F72B1FB31D00B48448 /* KeiraApp.swift */; };
 		957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F92B1FB31D00B48448 /* ContentView.swift */; };
 		957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D52FB2B1FB31E00B48448 /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		957D531F2B1FBF4700B48448 /* Raleway-v4020-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */; };
 		957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */; };
 		95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */; };
-		95C233E72B22234B00EFCC75 /* DevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E62B22234B00EFCC75 /* DevicesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +35,7 @@
 		9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDevicesViewModel.swift; sourceTree = "<group>"; };
 		9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceCell.swift; sourceTree = "<group>"; };
 		9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPickerCell.swift; sourceTree = "<group>"; };
+		952F70872B26460E007F1A46 /* GetDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceClass.swift; sourceTree = "<group>"; };
 		957D52F42B1FB31D00B48448 /* Keira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D52F72B1FB31D00B48448 /* KeiraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeiraApp.swift; sourceTree = "<group>"; };
 		957D52F92B1FB31D00B48448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		957D53202B1FBF5400B48448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RalewayFontModifier.swift; sourceTree = "<group>"; };
 		95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBackgroundModifier.swift; sourceTree = "<group>"; };
-		95C233E62B22234B00EFCC75 /* DevicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		957D53072B1FBB5700B48448 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				95C233E62B22234B00EFCC75 /* DevicesManager.swift */,
+				952F70872B26460E007F1A46 /* GetDeviceClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,12 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
-				95C233E72B22234B00EFCC75 /* DevicesManager.swift in Sources */,
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
 				957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */,
 				9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */,
 				95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */,
+				952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */,
 				9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */,
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
@@ -418,9 +418,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,9 +453,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

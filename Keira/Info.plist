@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Ubuntu-Bold.ttf</string>
+		<string>Ubuntu-Medium.ttf</string>
+		<string>Ubuntu-Regular.ttf</string>
+		<string>Ubuntu-Light.ttf</string>
+		<string>Raleway-v4020-Bold.ttf</string>
+		<string>Raleway-v4020-SemiBold.ttf</string>
+		<string>Raleway-v4020-Medium.ttf</string>
+		<string>Raleway-v4020-Regular.ttf</string>
+		<string>Raleway-v4020-Light.ttf</string>
+	</array>
+</dict>
+</plist>
