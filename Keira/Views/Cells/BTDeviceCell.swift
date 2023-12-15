@@ -13,7 +13,7 @@ import CoreBluetooth
 struct BTDeviceCell: View {
     
     @EnvironmentObject var btVM: BTDevicesViewModel
-    
+
     private let peripheral: CBPeripheral
     
     init(with peripheral: CBPeripheral) {
@@ -60,7 +60,7 @@ struct BTDeviceCell: View {
                 }.padding(.leading)
 
             }
-            else if let peripheral = self.btVM.selectedDevice, peripheral == self.peripheral, self.btVM.deviceConnectionStatus == .connected {
+            else if let peripheral = self.btVM.selectedDevice, peripheral == self.peripheral, self.btVM.deviceConnectionStatus == .connected { // Device connected
                 Button {
                     self.btVM.dropDevice(peripheral)
                     self.btVM.selectedDevice = nil
@@ -73,11 +73,11 @@ struct BTDeviceCell: View {
                 }
              
             }
-            else if let peripheral = self.btVM.selectedDevice, peripheral == self.peripheral, self.btVM.deviceConnectionStatus == .error {
-                Image(systemName: "xmark.circle")
-                    .resizable()
-                    .frame(width: Device.set(padnmac: 32.0, phone: 16.0), height: Device.set(padnmac: 32.0, phone: 16.0))
-                    .foregroundColor(.red)
+            else if let peripheral = self.btVM.selectedDevice, peripheral == self.peripheral, self.btVM.deviceConnectionStatus == .error { // Failure with connection
+                    Image(systemName: "xmark.circle")
+                        .resizable()
+                        .frame(width: Device.set(padnmac: 32.0, phone: 16.0), height: Device.set(padnmac: 32.0, phone: 16.0))
+                        .foregroundColor(.red)
             } else {
                 Button{
                     if let device = self.btVM.selectedDevice, device == self.peripheral {return}
@@ -96,7 +96,8 @@ struct BTDeviceCell: View {
             }
           
         }
-        
+       
+
     }
 }
 

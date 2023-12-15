@@ -27,6 +27,11 @@
 		957D531E2B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53152B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf */; };
 		957D531F2B1FBF4700B48448 /* Raleway-v4020-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */; };
 		957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */; };
+		957ED2D32B2CF19600CD264D /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2D22B2CF19600CD264D /* PopupView.swift */; };
+		957ED2D62B2CF1F200CD264D /* Vibro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2D52B2CF1F200CD264D /* Vibro.swift */; };
+		957ED2D82B2CF70C00CD264D /* PopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2D72B2CF70C00CD264D /* PopupViewModel.swift */; };
+		957ED2DA2B2CF8EC00CD264D /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2D92B2CF8EC00CD264D /* StarterView.swift */; };
+		957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2DB2B2D060C00CD264D /* Blur.swift */; };
 		95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,11 @@
 		957D53162B1FBF4700B48448 /* Raleway-v4020-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.ttf"; sourceTree = "<group>"; };
 		957D53202B1FBF5400B48448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RalewayFontModifier.swift; sourceTree = "<group>"; };
+		957ED2D22B2CF19600CD264D /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		957ED2D52B2CF1F200CD264D /* Vibro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibro.swift; sourceTree = "<group>"; };
+		957ED2D72B2CF70C00CD264D /* PopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewModel.swift; sourceTree = "<group>"; };
+		957ED2D92B2CF8EC00CD264D /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		957ED2DB2B2D060C00CD264D /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBackgroundModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +105,7 @@
 		957D52F62B1FB31D00B48448 /* Keira */ = {
 			isa = PBXGroup;
 			children = (
+				957ED2D42B2CF1E700CD264D /* Utils */,
 				957D53202B1FBF5400B48448 /* Info.plist */,
 				957D52F72B1FB31D00B48448 /* KeiraApp.swift */,
 				957D530B2B1FBF4700B48448 /* Resources */,
@@ -123,6 +134,8 @@
 				957D53212B1FC01800B48448 /* Modifiers */,
 				957D53082B1FBB8600B48448 /* Buttons */,
 				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+				957ED2D22B2CF19600CD264D /* PopupView.swift */,
+				957ED2D92B2CF8EC00CD264D /* StarterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */,
+				957ED2D72B2CF70C00CD264D /* PopupViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +204,15 @@
 				95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		957ED2D42B2CF1E700CD264D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				957ED2D52B2CF1F200CD264D /* Vibro.swift */,
+				957ED2DB2B2D060C00CD264D /* Blur.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957ED2DA2B2CF8EC00CD264D /* StarterView.swift in Sources */,
+				957ED2D32B2CF19600CD264D /* PopupView.swift in Sources */,
+				957ED2D82B2CF70C00CD264D /* PopupViewModel.swift in Sources */,
 				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
@@ -278,7 +304,9 @@
 				9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */,
 				95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */,
 				952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */,
+				957ED2D62B2CF1F200CD264D /* Vibro.swift in Sources */,
 				9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */,
+				957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */,
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
 			);
