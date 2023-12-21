@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951870522B34A0EE00B25017 /* JoystickRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */; };
+		951870532B34A0EE00B25017 /* PolarCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */; };
+		951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */; };
+		951870552B34A0EE00B25017 /* CGPoint-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704E2B34A0EE00B25017 /* CGPoint-Extension.swift */; };
+		951870562B34A0EE00B25017 /* JoystickMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704F2B34A0EE00B25017 /* JoystickMonitor.swift */; };
+		951870572B34A0EE00B25017 /* View-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870502B34A0EE00B25017 /* View-Extension.swift */; };
+		951870582B34A0EE00B25017 /* JoystickShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870512B34A0EE00B25017 /* JoystickShape.swift */; };
+		9518705B2B34A15300B25017 /* ControlPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705A2B34A15300B25017 /* ControlPadMainView.swift */; };
+		9518705D2B34A80600B25017 /* StartButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705C2B34A80600B25017 /* StartButtonStyle.swift */; };
+		9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705E2B34B8F300B25017 /* JoystickView.swift */; };
+		951870612B34D55000B25017 /* JoystickBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870602B34D55000B25017 /* JoystickBackgroundView.swift */; };
+		951870632B34D99500B25017 /* JoystickForegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870622B34D99500B25017 /* JoystickForegroundView.swift */; };
 		9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB262B20F71600A07A6C /* ControllersView.swift */; };
 		9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */; };
 		9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */; };
@@ -36,6 +48,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickRecognizer.swift; sourceTree = "<group>"; };
+		9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarCoordinate.swift; sourceTree = "<group>"; };
+		9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickBuilder.swift; sourceTree = "<group>"; };
+		9518704E2B34A0EE00B25017 /* CGPoint-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint-Extension.swift"; sourceTree = "<group>"; };
+		9518704F2B34A0EE00B25017 /* JoystickMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickMonitor.swift; sourceTree = "<group>"; };
+		951870502B34A0EE00B25017 /* View-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View-Extension.swift"; sourceTree = "<group>"; };
+		951870512B34A0EE00B25017 /* JoystickShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickShape.swift; sourceTree = "<group>"; };
+		9518705A2B34A15300B25017 /* ControlPadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPadMainView.swift; sourceTree = "<group>"; };
+		9518705C2B34A80600B25017 /* StartButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonStyle.swift; sourceTree = "<group>"; };
+		9518705E2B34B8F300B25017 /* JoystickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
+		951870602B34D55000B25017 /* JoystickBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickBackgroundView.swift; sourceTree = "<group>"; };
+		951870622B34D99500B25017 /* JoystickForegroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickForegroundView.swift; sourceTree = "<group>"; };
 		9523CB262B20F71600A07A6C /* ControllersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersView.swift; sourceTree = "<group>"; };
 		9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDevicesViewModel.swift; sourceTree = "<group>"; };
 		9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceCell.swift; sourceTree = "<group>"; };
@@ -77,6 +101,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9518704A2B34A0EE00B25017 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */,
+				9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */,
+				9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */,
+				9518704E2B34A0EE00B25017 /* CGPoint-Extension.swift */,
+				9518704F2B34A0EE00B25017 /* JoystickMonitor.swift */,
+				951870502B34A0EE00B25017 /* View-Extension.swift */,
+				951870512B34A0EE00B25017 /* JoystickShape.swift */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		951870592B34A11300B25017 /* ControlPad */ = {
+			isa = PBXGroup;
+			children = (
+				9518705A2B34A15300B25017 /* ControlPadMainView.swift */,
+				9518705E2B34B8F300B25017 /* JoystickView.swift */,
+				951870602B34D55000B25017 /* JoystickBackgroundView.swift */,
+				951870622B34D99500B25017 /* JoystickForegroundView.swift */,
+			);
+			path = ControlPad;
+			sourceTree = "<group>";
+		};
 		9523CB252B20F6EC00A07A6C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +178,13 @@
 		957D53052B1FBB4700B48448 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9523CB262B20F71600A07A6C /* ControllersView.swift */,
+				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+				951870592B34A11300B25017 /* ControlPad */,
+				9518704A2B34A0EE00B25017 /* Joystick */,
 				9523CB252B20F6EC00A07A6C /* Cells */,
 				957D53212B1FC01800B48448 /* Modifiers */,
 				957D53082B1FBB8600B48448 /* Buttons */,
-				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+				9523CB262B20F71600A07A6C /* ControllersView.swift */,
 				957ED2D22B2CF19600CD264D /* PopupView.swift */,
 				957ED2D92B2CF8EC00CD264D /* StarterView.swift */,
 			);
@@ -202,6 +253,7 @@
 			children = (
 				957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */,
 				95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */,
+				9518705C2B34A80600B25017 /* StartButtonStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -298,14 +350,26 @@
 				957ED2D32B2CF19600CD264D /* PopupView.swift in Sources */,
 				957ED2D82B2CF70C00CD264D /* PopupViewModel.swift in Sources */,
 				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
+				951870532B34A0EE00B25017 /* PolarCoordinate.swift in Sources */,
+				951870582B34A0EE00B25017 /* JoystickShape.swift in Sources */,
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
+				9518705B2B34A15300B25017 /* ControlPadMainView.swift in Sources */,
+				951870632B34D99500B25017 /* JoystickForegroundView.swift in Sources */,
+				9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */,
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
+				951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */,
+				951870562B34A0EE00B25017 /* JoystickMonitor.swift in Sources */,
 				957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */,
+				9518705D2B34A80600B25017 /* StartButtonStyle.swift in Sources */,
+				951870612B34D55000B25017 /* JoystickBackgroundView.swift in Sources */,
 				9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */,
 				95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */,
 				952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */,
 				957ED2D62B2CF1F200CD264D /* Vibro.swift in Sources */,
+				951870552B34A0EE00B25017 /* CGPoint-Extension.swift in Sources */,
+				951870522B34A0EE00B25017 /* JoystickRecognizer.swift in Sources */,
 				9523CB272B20F71600A07A6C /* ControllersView.swift in Sources */,
+				951870572B34A0EE00B25017 /* View-Extension.swift in Sources */,
 				957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */,
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,

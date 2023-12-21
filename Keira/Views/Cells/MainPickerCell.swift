@@ -83,7 +83,6 @@ struct MainPickerCell: View {
             
 
         }
-        .background(Color.black)
         .frame(height: Device.set(padnmac: 175, phone: 100))
 
         

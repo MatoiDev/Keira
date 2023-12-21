@@ -7,10 +7,23 @@
 
 import SwiftUI
 
+final class StarterViewModel: ObservableObject {
+    @Published var action: Int? = 0
+    
+    func openGitHub() {
+        guard let url = URL(string: "https://github.com/MatoiDev/Keira") else {return}
+        if UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
+    }
+}
+
 struct StarterView: View {
     
     @EnvironmentObject var btVM: BTDevicesViewModel
     @EnvironmentObject var popupVM: PopupViewModel
+    
+    @StateObject var _vm: StarterViewModel = StarterViewModel()
     
     init() {
         UITableView.appearance().separatorStyle = .none
@@ -21,6 +34,7 @@ struct StarterView: View {
     var body: some View {
         NavigationView {
             ZStack {
+
                 Color.black.ignoresSafeArea()
                 VStack {
                     VStack(alignment: .trailing) {
@@ -34,11 +48,9 @@ struct StarterView: View {
                                 Text("[Mac beta]").ralewayFont(.light, 30.0, color: .orange).onAppear(perform: {print(Device.get() == .pad)})
                                 #endif
                             }
-                            
                         }
-                        
                     }
-                
+                    
                     .padding(.top, 32)
                     
                     Spacer()
@@ -52,7 +64,6 @@ struct StarterView: View {
                         NavigationLink(destination: ControllersView()) { MainPickerCell(withType: .forCamera) }
                             .listRowBackground(Color.clear)
                             .listRowSeparator(.hidden)
-                            
                     }
                     .overlay(content: {
                         VStack {
@@ -61,17 +72,16 @@ struct StarterView: View {
                                 .fixedSize(horizontal: false, vertical: true)
                             Spacer()
                         }
-                     
+
                     })
                     .listStyle(.plain)
                     .background(.black)
                     .modifier(ListBackgroundModifier())
+                    
                     Spacer()
-                    Button {
-                        print("Hey")
-    
-                    } label: {
-                        
+                    
+                    NavigationLink(destination: ControlPadMainView())
+                    {
                         Text("Start Translation")
                             .ralewayFont(.semibold, Device.set(padnmac: 24.0, phone: 16.0), color: .black)
                             .frame(height: Device.set(padnmac: 75, phone: 50))
@@ -79,21 +89,20 @@ struct StarterView: View {
                             .background(Color.orange)
                             .cornerRadius(16)
                             .shadow(color: Color.orange.opacity(0.3), radius: 16, x: 0.0, y: 7.0)
-                        
-                        
+                            .opacity(self.btVM.selectedDevice != nil && self.btVM.deviceConnectionStatus == .connected ? 1 : 0.5)
                     }
-                    .padding(.horizontal, 8)
-                    .padding(.init(top: 0, leading: 16, bottom: 0, trailing: 16))
+                  
+                    .startButtonStyle(scale: 0.95)
+                    .disabled(self.btVM.deviceConnectionStatus != .connected)
+                    
                     Button {
-                        guard let url = URL(string: "https://github.com/MatoiDev/Keira") else {return}
-                        if UIApplication.shared.canOpenURL(url) {
-                            UIApplication.shared.open(url)
-                        }
+                        self._vm.openGitHub()
                     } label: {
                         Text("View project on GitHub")
                             .ralewayFont(.regular, Device.set(padnmac: 25.5, phone: 17.0), color: .orange)
-                    }.padding()
-                        .padding(.bottom, 16)
+                    }
+                    .padding()
+                    .padding(.bottom, 16)
                     
                 }
             }
@@ -103,6 +112,7 @@ struct StarterView: View {
         .accentColor(.orange)
         .navigationViewStyle(StackNavigationViewStyle())
         .onChange(of: self.btVM.deviceConnectionStatus, perform: { status in
+            
             switch status {
             case .connected:
                 self.popupVM.popupCase = .succes
@@ -112,6 +122,7 @@ struct StarterView: View {
                 return
             }
             self.popupVM.showPopup()
+            
         })
 
     }

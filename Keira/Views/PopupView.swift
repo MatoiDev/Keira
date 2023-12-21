@@ -32,7 +32,7 @@ struct PopupView: View {
             .padding()
             .frame(maxHeight: .infinity, alignment: .bottom)
             .transition(.move(edge: .bottom))
-        }
+        } 
     }
 }
 

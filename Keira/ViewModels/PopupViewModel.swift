@@ -26,6 +26,10 @@ final class PopupViewModel: ObservableObject {
     }
     
     func showPopup() -> Void {
+        withAnimation(Animation.easeInOut(duration: 0.5)) {
+            self.isPresented = false
+        }
+        
         withAnimation {
             self.timerCancellable?.cancel()
         }
@@ -41,12 +45,10 @@ final class PopupViewModel: ObservableObject {
         }
         
         timerCancellable = Timer.publish(every: 3.0, on: .main, in: .default).autoconnect().sink { _ in
-            withAnimation(Animation.spring()) {
+            withAnimation(Animation.easeInOut(duration: 0.8)) {
                 self.isPresented = false
             }
-            
             self.timerCancellable?.cancel()
         }
     }
-    
 }

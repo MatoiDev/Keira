@@ -107,7 +107,7 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if !peripherals.contains(peripheral) {
+        if !peripherals.contains(peripheral), peripheral.name != nil {
             self.peripherals.append(peripheral)
         }
     }

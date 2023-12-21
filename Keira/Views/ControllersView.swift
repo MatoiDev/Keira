@@ -11,13 +11,16 @@ import CoreBluetooth
 struct ControllersView: View {
     
     @EnvironmentObject var btVM: BTDevicesViewModel
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont(name: "Raleway-v4020-Bold", size: Device.set(padnmac: 48, phone: 30))!]
+    }
 
     var body: some View {
         
         List(self.btVM.peripherals, id: \.self) { peripheral in
             BTDeviceCell(with: peripheral)
         }
-        .navigationTitle("Select robot")
+        .navigationBarTitle("Select Device")
         .toolbar {
             
             ToolbarItem(placement: .navigationBarTrailing) {

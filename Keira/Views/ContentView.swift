@@ -11,8 +11,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            StarterView()
-            PopupView()
+            StarterView().zIndex(0)
+            PopupView().zIndex(1)
         }
         
     }
