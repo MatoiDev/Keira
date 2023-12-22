@@ -24,6 +24,7 @@
 		9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */; };
 		9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */; };
 		952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F70872B26460E007F1A46 /* GetDeviceClass.swift */; };
+		953CEE842B362266001F1337 /* BTDeviceServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */; };
 		957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F72B1FB31D00B48448 /* KeiraApp.swift */; };
 		957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F92B1FB31D00B48448 /* ContentView.swift */; };
 		957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D52FB2B1FB31E00B48448 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceCell.swift; sourceTree = "<group>"; };
 		9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPickerCell.swift; sourceTree = "<group>"; };
 		952F70872B26460E007F1A46 /* GetDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceClass.swift; sourceTree = "<group>"; };
+		953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceServiceManager.swift; sourceTree = "<group>"; };
 		957D52F42B1FB31D00B48448 /* Keira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D52F72B1FB31D00B48448 /* KeiraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeiraApp.swift; sourceTree = "<group>"; };
 		957D52F92B1FB31D00B48448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				952F70872B26460E007F1A46 /* GetDeviceClass.swift */,
+				953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
 				9518705B2B34A15300B25017 /* ControlPadMainView.swift in Sources */,
 				951870632B34D99500B25017 /* JoystickForegroundView.swift in Sources */,
+				953CEE842B362266001F1337 /* BTDeviceServiceManager.swift in Sources */,
 				9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */,
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
 				951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */,

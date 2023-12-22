@@ -25,7 +25,6 @@ struct PopupView: View {
                 Spacer()
             }.padding()
             .frame(maxWidth: .infinity, maxHeight: 64.0)
-
             .background((self.popupVM.popupCase == .succes ? Color.green : Color.red).opacity(0.2))
             .backgroundBlur(radius: 10, opaque: true) // More Elegant than material
             .cornerRadius(18.0)

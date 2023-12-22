@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct JoystickView: View {
+    
     @ObservedObject public var joystickMonitor: JoystickMonitor
+    @EnvironmentObject var btVM: BTDevicesViewModel
     
     private let dragDiameter: CGFloat
     private let shape: JoystickShape
