@@ -41,11 +41,11 @@ struct StarterView: View {
                         Text("Welcome to Keira")
                             .ralewayFont(.semibold, Device.set(padnmac: 64, phone: 32), color: .white)
                         HStack {
-                            Text("The best iOS IoT Interface")
+                            Text("Control your FPV bot via BLE.")
                                 .ralewayFont(.medium, Device.set(padnmac: 32, phone: 16), color: .secondary)
                             if Device.get() != .phone {
                                 #if targetEnvironment(macCatalyst)
-                                Text("[Mac beta]").ralewayFont(.light, 30.0, color: .orange).onAppear(perform: {print(Device.get() == .pad)})
+                                Text("[Mac beta]").ralewayFont(.light, 30.0, color: .orange)
                                 #endif
                             }
                         }
@@ -82,7 +82,7 @@ struct StarterView: View {
                     
                     NavigationLink(destination: ControlPadMainView())
                     {
-                        Text("Start Translation")
+                        Text("Control")
                             .ralewayFont(.semibold, Device.set(padnmac: 24.0, phone: 16.0), color: .black)
                             .frame(height: Device.set(padnmac: 75, phone: 50))
                             .frame(maxWidth: .infinity)

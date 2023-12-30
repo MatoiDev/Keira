@@ -35,9 +35,6 @@ struct JoystickView: View {
                 },
                 locksInPlace: false)
         }
-        .onChange(of: self.joystickMonitor.xyPoint.y) { newValue in
-            print(newValue)
-        }
     }
 }
 

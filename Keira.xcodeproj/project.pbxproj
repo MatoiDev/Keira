@@ -23,8 +23,12 @@
 		9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */; };
 		9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */; };
 		9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */; };
+		95290CB82B402E0400E6C894 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95290CB72B402E0400E6C894 /* KeyboardHandler.swift */; };
+		95290CDB2B40B81B00E6C894 /* MBProgressHUDRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95290CD72B40B81B00E6C894 /* MBProgressHUDRepresentable.swift */; };
+		95290CDC2B40B81B00E6C894 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 95290CD82B40B81B00E6C894 /* MBProgressHUD.m */; };
 		952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F70872B26460E007F1A46 /* GetDeviceClass.swift */; };
 		953CEE842B362266001F1337 /* BTDeviceServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */; };
+		953CEE862B364E14001F1337 /* ControlPadMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEE852B364E14001F1337 /* ControlPadMainViewModel.swift */; };
 		957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F72B1FB31D00B48448 /* KeiraApp.swift */; };
 		957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957D52F92B1FB31D00B48448 /* ContentView.swift */; };
 		957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D52FB2B1FB31E00B48448 /* Assets.xcassets */; };
@@ -65,8 +69,15 @@
 		9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDevicesViewModel.swift; sourceTree = "<group>"; };
 		9523CB2C2B20FDDC00A07A6C /* BTDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceCell.swift; sourceTree = "<group>"; };
 		9523CB2E2B210B7B00A07A6C /* MainPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPickerCell.swift; sourceTree = "<group>"; };
+		95290CB72B402E0400E6C894 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		95290CB92B406AA300E6C894 /* Keira.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keira.entitlements; sourceTree = "<group>"; };
+		95290CD72B40B81B00E6C894 /* MBProgressHUDRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDRepresentable.swift; sourceTree = "<group>"; };
+		95290CD82B40B81B00E6C894 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		95290CD92B40B81B00E6C894 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		95290CDD2B40B9BC00E6C894 /* Keira-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keira-Bridging-Header.h"; sourceTree = "<group>"; };
 		952F70872B26460E007F1A46 /* GetDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceClass.swift; sourceTree = "<group>"; };
 		953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceServiceManager.swift; sourceTree = "<group>"; };
+		953CEE852B364E14001F1337 /* ControlPadMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPadMainViewModel.swift; sourceTree = "<group>"; };
 		957D52F42B1FB31D00B48448 /* Keira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		957D52F72B1FB31D00B48448 /* KeiraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeiraApp.swift; sourceTree = "<group>"; };
 		957D52F92B1FB31D00B48448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +148,25 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		95290CB62B402DE500E6C894 /* KeyboardHandler */ = {
+			isa = PBXGroup;
+			children = (
+				95290CB72B402E0400E6C894 /* KeyboardHandler.swift */,
+			);
+			path = KeyboardHandler;
+			sourceTree = "<group>";
+		};
+		95290CD62B40B81B00E6C894 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				95290CD72B40B81B00E6C894 /* MBProgressHUDRepresentable.swift */,
+				95290CD82B40B81B00E6C894 /* MBProgressHUD.m */,
+				95290CD92B40B81B00E6C894 /* MBProgressHUD.h */,
+				95290CDD2B40B9BC00E6C894 /* Keira-Bridging-Header.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		957D52EB2B1FB31D00B48448 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +186,7 @@
 		957D52F62B1FB31D00B48448 /* Keira */ = {
 			isa = PBXGroup;
 			children = (
+				95290CB92B406AA300E6C894 /* Keira.entitlements */,
 				957ED2D42B2CF1E700CD264D /* Utils */,
 				957D53202B1FBF5400B48448 /* Info.plist */,
 				957D52F72B1FB31D00B48448 /* KeiraApp.swift */,
@@ -181,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				957D52F92B1FB31D00B48448 /* ContentView.swift */,
+				95290CD62B40B81B00E6C894 /* MBProgressHUD */,
 				951870592B34A11300B25017 /* ControlPad */,
 				9518704A2B34A0EE00B25017 /* Joystick */,
 				9523CB252B20F6EC00A07A6C /* Cells */,
@@ -198,6 +230,7 @@
 			children = (
 				9523CB2A2B20FA9900A07A6C /* BTDevicesViewModel.swift */,
 				957ED2D72B2CF70C00CD264D /* PopupViewModel.swift */,
+				953CEE852B364E14001F1337 /* ControlPadMainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -264,6 +297,7 @@
 		957ED2D42B2CF1E700CD264D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				95290CB62B402DE500E6C894 /* KeyboardHandler */,
 				957ED2D52B2CF1F200CD264D /* Vibro.swift */,
 				957ED2DB2B2D060C00CD264D /* Blur.swift */,
 			);
@@ -350,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957ED2DA2B2CF8EC00CD264D /* StarterView.swift in Sources */,
+				953CEE862B364E14001F1337 /* ControlPadMainViewModel.swift in Sources */,
 				957ED2D32B2CF19600CD264D /* PopupView.swift in Sources */,
 				957ED2D82B2CF70C00CD264D /* PopupViewModel.swift in Sources */,
 				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
@@ -363,6 +398,8 @@
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
 				951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */,
 				951870562B34A0EE00B25017 /* JoystickMonitor.swift in Sources */,
+				95290CDC2B40B81B00E6C894 /* MBProgressHUD.m in Sources */,
+				95290CB82B402E0400E6C894 /* KeyboardHandler.swift in Sources */,
 				957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */,
 				9518705D2B34A80600B25017 /* StartButtonStyle.swift in Sources */,
 				951870612B34D55000B25017 /* JoystickBackgroundView.swift in Sources */,
@@ -376,6 +413,7 @@
 				951870572B34A0EE00B25017 /* View-Extension.swift in Sources */,
 				957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */,
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
+				95290CDB2B40B81B00E6C894 /* MBProgressHUDRepresentable.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Keira/Keira.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Keira/Preview Content\"";
@@ -526,7 +565,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.erast.Keira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/worm/Desktop/Keira/Keira/Views/MBProgressHUD/Keira-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Keira/Keira.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Keira/Preview Content\"";
@@ -561,7 +606,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.erast.Keira;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/worm/Desktop/Keira/Keira/Views/MBProgressHUD/Keira-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

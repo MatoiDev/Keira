@@ -77,7 +77,7 @@ final class BTDevicesViewModel: NSObject, ObservableObject {
                       }
                   })
                   .store(in: &cancellables)
-          }
+        }
       }
     
     func stopScan() {
@@ -112,7 +112,7 @@ final class BTDevicesViewModel: NSObject, ObservableObject {
         
         if let data = msg.data(using: .utf8) {
             peripheral.writeValue(data, for: characteristic, type: .withoutResponse)
-            print("Отправил: \(data)")
+            print("Send message over Bluetooth: \(data)")
         }
        
     }
@@ -125,7 +125,7 @@ final class BTDevicesViewModel: NSObject, ObservableObject {
         
         if let data = "\(x) \(y)".data(using: .utf8) {
             peripheral.writeValue(data, for: characteristic, type: .withoutResponse)
-            print("Отправил: \(data)")
+            print("Send left joystick value over Bluetooth: \(data)")
         }
     }
     
@@ -137,7 +137,7 @@ final class BTDevicesViewModel: NSObject, ObservableObject {
         
         if let data = "\(x) \(y)".data(using: .utf8) {
             peripheral.writeValue(data, for: characteristic, type: .withoutResponse)
-            print("Отправил: \(data)")
+            print("Send right joystick value over Bluetooth: \(data)")
         }
     }
 }
@@ -178,7 +178,6 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
         if let robotPeripheral = self.selectedDevice, robotPeripheral == peripheral {
             self.selectedDevice = nil
             self.deviceConnectionStatus = .disconnected
-            print("Отключаюсь от робота \(peripheral.name ?? "Unnamed")")
         } else if let cameraPeripheral = self.selectedCamera, cameraPeripheral == peripheral {
             self.selectedCamera = nil
             self.cameraConnectionStatus = .disconnected
@@ -194,7 +193,6 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
         for service in services {
             if service.uuid.uuidString == DeviceUUIDs.__SERVICE_UUID.rawValue {
                 self.serviceManager.service = service
-                print("Service discovered")
                 peripheral.discoverCharacteristics(nil, for: service)
             }
         }
@@ -204,19 +202,15 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
         
         if let _ = error { return }
         guard let characteristics: [CBCharacteristic] = service.characteristics else { return }
-        print("Characteristic discovering...")
         for characteristic in characteristics {
             if characteristic.uuid.uuidString == DeviceUUIDs.__CHARACTERISTIC_UUID.rawValue {
                 self.serviceManager.msgCharacteristic = characteristic
-                print("Msg added")
             }
             else if characteristic.uuid.uuidString == DeviceUUIDs.__LEFT_JOYSTICK_CHARACTERISTIC_UUID.rawValue {
                 self.serviceManager.leftJoystickCharacteristic = characteristic
-                print("Left added \(characteristic)")
             }
             else if characteristic.uuid.uuidString == DeviceUUIDs.__RIGHT_JOYSTICK_CHARACTERISTIC_UUID.rawValue {
                 self.serviceManager.rightJoystickCharacteristic = characteristic
-                print("Right added \(characteristic)")
             }
         }
         
