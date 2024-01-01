@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C71078E71C48C5D29D80FB /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C7196349BCFDB439BB4676 /* Preview.png */; };
 		951870522B34A0EE00B25017 /* JoystickRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */; };
 		951870532B34A0EE00B25017 /* PolarCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */; };
 		951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */; };
@@ -26,6 +27,7 @@
 		95290CB82B402E0400E6C894 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95290CB72B402E0400E6C894 /* KeyboardHandler.swift */; };
 		95290CDB2B40B81B00E6C894 /* MBProgressHUDRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95290CD72B40B81B00E6C894 /* MBProgressHUDRepresentable.swift */; };
 		95290CDC2B40B81B00E6C894 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 95290CD82B40B81B00E6C894 /* MBProgressHUD.m */; };
+		95290CDF2B40C42300E6C894 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 95290CDE2B40C42300E6C894 /* README.md */; };
 		952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952F70872B26460E007F1A46 /* GetDeviceClass.swift */; };
 		953CEE842B362266001F1337 /* BTDeviceServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */; };
 		953CEE862B364E14001F1337 /* ControlPadMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953CEE852B364E14001F1337 /* ControlPadMainViewModel.swift */; };
@@ -53,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37C7196349BCFDB439BB4676 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
 		9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickRecognizer.swift; sourceTree = "<group>"; };
 		9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarCoordinate.swift; sourceTree = "<group>"; };
 		9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickBuilder.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		95290CD82B40B81B00E6C894 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		95290CD92B40B81B00E6C894 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		95290CDD2B40B9BC00E6C894 /* Keira-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keira-Bridging-Header.h"; sourceTree = "<group>"; };
+		95290CDE2B40C42300E6C894 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		952F70872B26460E007F1A46 /* GetDeviceClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceClass.swift; sourceTree = "<group>"; };
 		953CEE832B362266001F1337 /* BTDeviceServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTDeviceServiceManager.swift; sourceTree = "<group>"; };
 		953CEE852B364E14001F1337 /* ControlPadMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPadMainViewModel.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		957D52EB2B1FB31D00B48448 = {
 			isa = PBXGroup;
 			children = (
+				959766C52B431865002AED64 /* README ASSETS */,
+				95290CDE2B40C42300E6C894 /* README.md */,
 				957D52F62B1FB31D00B48448 /* Keira */,
 				957D52F52B1FB31D00B48448 /* Products */,
 			);
@@ -187,9 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				95290CB92B406AA300E6C894 /* Keira.entitlements */,
-				957ED2D42B2CF1E700CD264D /* Utils */,
 				957D53202B1FBF5400B48448 /* Info.plist */,
 				957D52F72B1FB31D00B48448 /* KeiraApp.swift */,
+				957ED2D42B2CF1E700CD264D /* Utils */,
 				957D530B2B1FBF4700B48448 /* Resources */,
 				957D53072B1FBB5700B48448 /* Models */,
 				957D53062B1FBB4E00B48448 /* ViewModels */,
@@ -304,6 +310,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		959766C52B431865002AED64 /* README ASSETS */ = {
+			isa = PBXGroup;
+			children = (
+				37C7196349BCFDB439BB4676 /* Preview.png */,
+			);
+			path = "README ASSETS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,11 +382,13 @@
 				957D531F2B1FBF4700B48448 /* Raleway-v4020-Regular.ttf in Resources */,
 				957D53182B1FBF4700B48448 /* Ubuntu-Regular.ttf in Resources */,
 				957D531E2B1FBF4700B48448 /* Raleway-v4020-SemiBold.ttf in Resources */,
+				95290CDF2B40C42300E6C894 /* README.md in Resources */,
 				957D52FF2B1FB31E00B48448 /* Preview Assets.xcassets in Resources */,
 				957D52FC2B1FB31E00B48448 /* Assets.xcassets in Resources */,
 				957D531A2B1FBF4700B48448 /* Ubuntu-Light.ttf in Resources */,
 				957D531D2B1FBF4700B48448 /* Raleway-v4020-Light.ttf in Resources */,
 				957D53172B1FBF4700B48448 /* Ubuntu-Medium.ttf in Resources */,
+				37C71078E71C48C5D29D80FB /* Preview.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -525,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
