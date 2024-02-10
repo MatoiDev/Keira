@@ -52,6 +52,9 @@
 		957ED2DA2B2CF8EC00CD264D /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2D92B2CF8EC00CD264D /* StarterView.swift */; };
 		957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957ED2DB2B2D060C00CD264D /* Blur.swift */; };
 		95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */; };
+		95D2E7502B61AB5C00FA39FD /* ModePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2E74F2B61AB5C00FA39FD /* ModePopup.swift */; };
+		95D2E7522B61ABAA00FA39FD /* PopupModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D2E7512B61ABAA00FA39FD /* PopupModeCell.swift */; };
+		95E14FA32B780B8500A60351 /* ModeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E14FA22B780B8500A60351 /* ModeButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +108,9 @@
 		957ED2D92B2CF8EC00CD264D /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		957ED2DB2B2D060C00CD264D /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBackgroundModifier.swift; sourceTree = "<group>"; };
+		95D2E74F2B61AB5C00FA39FD /* ModePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModePopup.swift; sourceTree = "<group>"; };
+		95D2E7512B61ABAA00FA39FD /* PopupModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupModeCell.swift; sourceTree = "<group>"; };
+		95E14FA22B780B8500A60351 /* ModeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +223,7 @@
 		957D53052B1FBB4700B48448 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95D2E74E2B61AB3200FA39FD /* ModePopup */,
 				957D52F92B1FB31D00B48448 /* ContentView.swift */,
 				95290CD62B40B81B00E6C894 /* MBProgressHUD */,
 				951870592B34A11300B25017 /* ControlPad */,
@@ -295,7 +302,7 @@
 			children = (
 				957D53222B1FC02C00B48448 /* RalewayFontModifier.swift */,
 				95C233E22B221D7100EFCC75 /* ListBackgroundModifier.swift */,
-				9518705C2B34A80600B25017 /* StartButtonStyle.swift */,
+				95E14FA42B780BB300A60351 /* Button */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -316,6 +323,24 @@
 				37C7196349BCFDB439BB4676 /* Preview.png */,
 			);
 			path = "README ASSETS";
+			sourceTree = "<group>";
+		};
+		95D2E74E2B61AB3200FA39FD /* ModePopup */ = {
+			isa = PBXGroup;
+			children = (
+				95D2E74F2B61AB5C00FA39FD /* ModePopup.swift */,
+				95D2E7512B61ABAA00FA39FD /* PopupModeCell.swift */,
+			);
+			path = ModePopup;
+			sourceTree = "<group>";
+		};
+		95E14FA42B780BB300A60351 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9518705C2B34A80600B25017 /* StartButtonStyle.swift */,
+				95E14FA22B780B8500A60351 /* ModeButtonStyle.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,7 +438,9 @@
 				9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */,
 				9523CB2F2B210B7B00A07A6C /* MainPickerCell.swift in Sources */,
 				951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */,
+				95E14FA32B780B8500A60351 /* ModeButtonStyle.swift in Sources */,
 				951870562B34A0EE00B25017 /* JoystickMonitor.swift in Sources */,
+				95D2E7502B61AB5C00FA39FD /* ModePopup.swift in Sources */,
 				95290CDC2B40B81B00E6C894 /* MBProgressHUD.m in Sources */,
 				95290CB82B402E0400E6C894 /* KeyboardHandler.swift in Sources */,
 				957D52F82B1FB31D00B48448 /* KeiraApp.swift in Sources */,
@@ -429,6 +456,7 @@
 				951870572B34A0EE00B25017 /* View-Extension.swift in Sources */,
 				957ED2DC2B2D060C00CD264D /* Blur.swift in Sources */,
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
+				95D2E7522B61ABAA00FA39FD /* PopupModeCell.swift in Sources */,
 				95290CDB2B40B81B00E6C894 /* MBProgressHUDRepresentable.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
 			);

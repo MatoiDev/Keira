@@ -379,7 +379,7 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
                 activityIndicator.color = [UIColor whiteColor];
 #if !TARGET_OS_MACCATALYST
             } else {
-               activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+                activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
             }
 #endif
             [activityIndicator startAnimating];

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b153d950-4477-4969-83db-800f6f573b6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Keira.xcodeproj/project.xcworkspace/xcuserdata/worm.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Keira.xcodeproj/xcuserdata/worm.xcuserdatad/xcschemes/Keira.xcscheme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README ASSETS/Preview.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keira.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Keira.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Keira.xcodeproj/project.xcworkspace/xcuserdata/worm.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Keira.xcodeproj/project.xcworkspace/xcuserdata/worm.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keira.xcodeproj/xcuserdata/worm.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Keira.xcodeproj/xcuserdata/worm.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keira/Views/MBProgressHUD/MBProgressHUDRepresentable.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Keira/Views/MBProgressHUD/MBProgressHUDRepresentable.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +63,11 @@
       <workItem from="1704146046357" duration="137000" />
       <workItem from="1704146187552" duration="48000" />
       <workItem from="1704146282367" duration="197000" />
+      <workItem from="1704219455977" duration="1016000" />
+      <workItem from="1704287531214" duration="10000" />
+      <workItem from="1704287556247" duration="16000" />
+      <workItem from="1704287637106" duration="7000" />
+      <workItem from="1704289125502" duration="12000" />
     </task>
     <servers />
   </component>

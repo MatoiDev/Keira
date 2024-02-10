@@ -173,8 +173,7 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
        
     }
     
-    private func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
-        
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         if let robotPeripheral = self.selectedDevice, robotPeripheral == peripheral {
             self.selectedDevice = nil
             self.deviceConnectionStatus = .disconnected
@@ -198,11 +197,14 @@ extension BTDevicesViewModel: CBCentralManagerDelegate {
         }
     }
     
+    
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
-        
         if let _ = error { return }
+        
         guard let characteristics: [CBCharacteristic] = service.characteristics else { return }
+        print(characteristics)
         for characteristic in characteristics {
+            
             if characteristic.uuid.uuidString == DeviceUUIDs.__CHARACTERISTIC_UUID.rawValue {
                 self.serviceManager.msgCharacteristic = characteristic
             }

@@ -9,6 +9,7 @@ import SwiftUI
 
 final class StarterViewModel: ObservableObject {
     @Published var action: Int? = 0
+    @Published var showModePopup: Bool = false
     
     func openGitHub() {
         guard let url = URL(string: "https://github.com/MatoiDev/Keira") else {return}
@@ -80,8 +81,9 @@ struct StarterView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: ControlPadMainView())
-                    {
+                    Button {
+                        self._vm.showModePopup.toggle()
+                    } label: {
                         Text("Control")
                             .ralewayFont(.semibold, Device.set(padnmac: 24.0, phone: 16.0), color: .black)
                             .frame(height: Device.set(padnmac: 75, phone: 50))
@@ -95,6 +97,7 @@ struct StarterView: View {
                     .startButtonStyle(scale: 0.95)
                     .disabled(self.btVM.deviceConnectionStatus != .connected)
                     
+                
                     Button {
                         self._vm.openGitHub()
                     } label: {
@@ -105,6 +108,7 @@ struct StarterView: View {
                     .padding(.bottom, 16)
                     
                 }
+                ModePopup(isPresented: self.$_vm.showModePopup).zIndex(10)
             }
             .navigationBarHidden(true)
             .navigationBarTitle(Text("Main"))

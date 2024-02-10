@@ -1,6 +1,6 @@
-# Keira
-
 <img src="README ASSETS/Preview.png">
+
+# Keira
 
 Приложения для управления FPV роботами на микроконтроллерах ESP, Arduino, STM и пр. через  Bluetooth Low Energy
 
