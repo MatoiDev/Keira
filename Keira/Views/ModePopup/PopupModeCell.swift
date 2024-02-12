@@ -30,13 +30,14 @@ struct PopupModeTip: View {
                 .renderingMode(.template)
                 .symbolRenderingMode(.hierarchical)
                 .scaledToFit()
-                .frame(width: 35, height: 35)
+                .frame(width: 30, height: 30)
                 .rotationEffect(Angle(degrees: self.rotationDegrees))
                 .foregroundColor(.white)
             Text(self.text)
-                .ralewayFont(.medium, 12, color: .white)
+                .ralewayFont(.medium, 10, color: .white)
         }
     }
+    
 }
 
 //#colorLiteral(red: 0.2675397396, green: 0.2625786066, blue: 0.2669721246, alpha: 1)
@@ -50,49 +51,43 @@ struct PopupModeCell: View {
     }
     
     var body: some View {
-        
-        NavigationLink(destination: ControlPadMainView())
+        NavigationLink(destination: self.mode == .real ? AnyView(RealControlPadMainView()) : AnyView(ClassicControlPadMainView()))
         {
             
             VStack(alignment: .center) {
-                VStack (alignment: .leading) {
+                VStack (alignment: .center) {
                     Text(self.mode == .real ? "Real mode" : "Classic mode")
-                        .ralewayFont(.bold, 20, color: .white)
-                        .padding(.leading, 8)
-                    
+                        .ralewayFont(.bold, 22, color: .white).padding(.bottom, 1)
                     Text(self.mode == .real ? "Control the **steering**, shift the **gearbox** just like in a real car" : "Use the **joysticks** or **keyboard** to control your car")
-                        .multilineTextAlignment(.leading)
-                        .ralewayFont(.medium, 16, color: .gray)
-                    
+                        .ralewayFont(.medium, 15, color: .gray)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .center)
                 .padding(.horizontal, 16)
-                Spacer()
-                
+
                 HStack(alignment: .center, spacing: 16) {
                     
                     PopupModeTip(image: Image( "iphone.gen2.landscape"), text: "iPhone")
                     PopupModeTip(image: Image(systemName: "laptopcomputer"), text: "Macbook")
+                    
                     if self.mode == .real {
                         PopupModeTip(image: Image("transmission"), text: "Gearbox")
                     } else {
                         PopupModeTip(image: Image(systemName: "keyboard"), text: "Keyboard")
                     }
                     if self.mode == .real {
-                        PopupModeTip(image:      Image("steering_wheel"), text: "Steering", rotationDegrees: -45.0)
+                        PopupModeTip(image: Image("steering_wheel"), text: "Steering", rotationDegrees: -45.0)
                     } else {
                         PopupModeTip(image: Image(systemName: "r.joystick.fill").symbolRenderingMode(.palette), text: "Joystick")
                     }
                     
-                    
                 }
                 
             }.padding(.vertical, 8)
-            
                 .background(Color(uiColor: #colorLiteral(red: 0.1498875022, green: 0.1449306607, blue: 0.1450200379, alpha: 0.8984023086)))
                 .mask {
                     RoundedRectangle(cornerRadius: 28)
-                }.fixedSize(horizontal: false, vertical: true)
+                }
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth:.infinity, maxHeight: 150)
         
@@ -101,7 +96,6 @@ struct PopupModeCell: View {
 
 struct PopupModeCell_Previews: PreviewProvider {
     static var previews: some View {
-        PopupModeCell(withMode: .real
-        )
+        PopupModeCell(withMode: .real)
     }
 }

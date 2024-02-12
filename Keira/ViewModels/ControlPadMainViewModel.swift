@@ -1,5 +1,5 @@
 //
-//  ControlPadMainViewModel.swift
+//  ClassicControlPadMainViewModel.swift
 //  Keira
 //
 //  Created by Matoi on 23.12.2023.
@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-class ControlPadMainViewModel {
+class ClassicControlPadMainViewModel {
     
     private var cancellables: Set<AnyCancellable> = []
     private let updateInterval: TimeInterval = 0.1
@@ -19,7 +19,7 @@ class ControlPadMainViewModel {
     
     private var lastUpdateTime: Date = Date()
     
-    func convert(coordinates: CGPoint, vm: BTDevicesViewModel, side: ControlPadMainViewModel.Side) {
+    func convert(coordinates: CGPoint, vm: BTDevicesViewModel, side: ClassicControlPadMainViewModel.Side) {
         let currentTime = Date()
         
         

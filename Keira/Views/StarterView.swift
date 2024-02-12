@@ -99,7 +99,8 @@ struct StarterView: View {
                     
                 
                     Button {
-                        self._vm.openGitHub()
+//                        self._vm.openGitHub()
+                        self._vm.showModePopup.toggle()
                     } label: {
                         Text("View project on GitHub")
                             .ralewayFont(.regular, Device.set(padnmac: 25.5, phone: 17.0), color: .orange)

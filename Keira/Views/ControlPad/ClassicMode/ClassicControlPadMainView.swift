@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ControlPadMainView: View {
+struct ClassicControlPadMainView: View {
     
     @StateObject private var leftJoystickMonitor : JoystickMonitor = JoystickMonitor()
     @StateObject private var rightJoystickMonitor : JoystickMonitor = JoystickMonitor()
@@ -18,7 +18,7 @@ struct ControlPadMainView: View {
     @EnvironmentObject private var btVM: BTDevicesViewModel
     @EnvironmentObject var popupVM: PopupViewModel
     
-    private let _vm: ControlPadMainViewModel = ControlPadMainViewModel()
+    private let _vm: ClassicControlPadMainViewModel = ClassicControlPadMainViewModel()
     
     var body: some View {
         ZStack {
@@ -59,8 +59,8 @@ struct ControlPadMainView: View {
 
 }
 
-struct ControlPadMainView_Previews: PreviewProvider {
+struct ClassicControlPadMainView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlPadMainView()
+        ClassicControlPadMainView()
     }
 }

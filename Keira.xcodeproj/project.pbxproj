@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		37C71078E71C48C5D29D80FB /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C7196349BCFDB439BB4676 /* Preview.png */; };
+		951549B52B7A6F8100756F36 /* RealControlPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951549B42B7A6F8100756F36 /* RealControlPadMainView.swift */; };
+		951549B92B7A840300756F36 /* GearboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951549B82B7A840300756F36 /* GearboxView.swift */; };
+		951549BB2B7A844800756F36 /* GearboxKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951549BA2B7A844800756F36 /* GearboxKnob.swift */; };
+		951549BE2B7ABCCD00756F36 /* SteeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951549BD2B7ABCCD00756F36 /* SteeringView.swift */; };
 		951870522B34A0EE00B25017 /* JoystickRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */; };
 		951870532B34A0EE00B25017 /* PolarCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */; };
 		951870542B34A0EE00B25017 /* JoystickBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */; };
@@ -15,7 +19,7 @@
 		951870562B34A0EE00B25017 /* JoystickMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518704F2B34A0EE00B25017 /* JoystickMonitor.swift */; };
 		951870572B34A0EE00B25017 /* View-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870502B34A0EE00B25017 /* View-Extension.swift */; };
 		951870582B34A0EE00B25017 /* JoystickShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870512B34A0EE00B25017 /* JoystickShape.swift */; };
-		9518705B2B34A15300B25017 /* ControlPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705A2B34A15300B25017 /* ControlPadMainView.swift */; };
+		9518705B2B34A15300B25017 /* ClassicControlPadMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705A2B34A15300B25017 /* ClassicControlPadMainView.swift */; };
 		9518705D2B34A80600B25017 /* StartButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705C2B34A80600B25017 /* StartButtonStyle.swift */; };
 		9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518705E2B34B8F300B25017 /* JoystickView.swift */; };
 		951870612B34D55000B25017 /* JoystickBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951870602B34D55000B25017 /* JoystickBackgroundView.swift */; };
@@ -59,6 +63,10 @@
 
 /* Begin PBXFileReference section */
 		37C7196349BCFDB439BB4676 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		951549B42B7A6F8100756F36 /* RealControlPadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealControlPadMainView.swift; sourceTree = "<group>"; };
+		951549B82B7A840300756F36 /* GearboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearboxView.swift; sourceTree = "<group>"; };
+		951549BA2B7A844800756F36 /* GearboxKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearboxKnob.swift; sourceTree = "<group>"; };
+		951549BD2B7ABCCD00756F36 /* SteeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteeringView.swift; sourceTree = "<group>"; };
 		9518704B2B34A0EE00B25017 /* JoystickRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickRecognizer.swift; sourceTree = "<group>"; };
 		9518704C2B34A0EE00B25017 /* PolarCoordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarCoordinate.swift; sourceTree = "<group>"; };
 		9518704D2B34A0EE00B25017 /* JoystickBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickBuilder.swift; sourceTree = "<group>"; };
@@ -66,7 +74,7 @@
 		9518704F2B34A0EE00B25017 /* JoystickMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickMonitor.swift; sourceTree = "<group>"; };
 		951870502B34A0EE00B25017 /* View-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View-Extension.swift"; sourceTree = "<group>"; };
 		951870512B34A0EE00B25017 /* JoystickShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickShape.swift; sourceTree = "<group>"; };
-		9518705A2B34A15300B25017 /* ControlPadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPadMainView.swift; sourceTree = "<group>"; };
+		9518705A2B34A15300B25017 /* ClassicControlPadMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicControlPadMainView.swift; sourceTree = "<group>"; };
 		9518705C2B34A80600B25017 /* StartButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonStyle.swift; sourceTree = "<group>"; };
 		9518705E2B34B8F300B25017 /* JoystickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickView.swift; sourceTree = "<group>"; };
 		951870602B34D55000B25017 /* JoystickBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickBackgroundView.swift; sourceTree = "<group>"; };
@@ -124,6 +132,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951549B22B7A6ED100756F36 /* ClassicMode */ = {
+			isa = PBXGroup;
+			children = (
+				9518705A2B34A15300B25017 /* ClassicControlPadMainView.swift */,
+				951549B62B7A83E800756F36 /* Joystick */,
+			);
+			path = ClassicMode;
+			sourceTree = "<group>";
+		};
+		951549B32B7A6ED900756F36 /* RealMode */ = {
+			isa = PBXGroup;
+			children = (
+				951549BC2B7ABCC100756F36 /* Steering */,
+				951549B42B7A6F8100756F36 /* RealControlPadMainView.swift */,
+				951549B72B7A83F000756F36 /* Gearbox */,
+			);
+			path = RealMode;
+			sourceTree = "<group>";
+		};
+		951549B62B7A83E800756F36 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				9518705E2B34B8F300B25017 /* JoystickView.swift */,
+				951870602B34D55000B25017 /* JoystickBackgroundView.swift */,
+				951870622B34D99500B25017 /* JoystickForegroundView.swift */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		951549B72B7A83F000756F36 /* Gearbox */ = {
+			isa = PBXGroup;
+			children = (
+				951549B82B7A840300756F36 /* GearboxView.swift */,
+				951549BA2B7A844800756F36 /* GearboxKnob.swift */,
+			);
+			path = Gearbox;
+			sourceTree = "<group>";
+		};
+		951549BC2B7ABCC100756F36 /* Steering */ = {
+			isa = PBXGroup;
+			children = (
+				951549BD2B7ABCCD00756F36 /* SteeringView.swift */,
+			);
+			path = Steering;
+			sourceTree = "<group>";
+		};
 		9518704A2B34A0EE00B25017 /* Joystick */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +195,8 @@
 		951870592B34A11300B25017 /* ControlPad */ = {
 			isa = PBXGroup;
 			children = (
-				9518705A2B34A15300B25017 /* ControlPadMainView.swift */,
-				9518705E2B34B8F300B25017 /* JoystickView.swift */,
-				951870602B34D55000B25017 /* JoystickBackgroundView.swift */,
-				951870622B34D99500B25017 /* JoystickForegroundView.swift */,
+				951549B32B7A6ED900756F36 /* RealMode */,
+				951549B22B7A6ED100756F36 /* ClassicMode */,
 			);
 			path = ControlPad;
 			sourceTree = "<group>";
@@ -223,10 +275,10 @@
 		957D53052B1FBB4700B48448 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				951870592B34A11300B25017 /* ControlPad */,
 				95D2E74E2B61AB3200FA39FD /* ModePopup */,
 				957D52F92B1FB31D00B48448 /* ContentView.swift */,
 				95290CD62B40B81B00E6C894 /* MBProgressHUD */,
-				951870592B34A11300B25017 /* ControlPad */,
 				9518704A2B34A0EE00B25017 /* Joystick */,
 				9523CB252B20F6EC00A07A6C /* Cells */,
 				957D53212B1FC01800B48448 /* Modifiers */,
@@ -429,10 +481,11 @@
 				957ED2D32B2CF19600CD264D /* PopupView.swift in Sources */,
 				957ED2D82B2CF70C00CD264D /* PopupViewModel.swift in Sources */,
 				957D530A2B1FBBB500B48448 /* StartTranslationButton.swift in Sources */,
+				951549BE2B7ABCCD00756F36 /* SteeringView.swift in Sources */,
 				951870532B34A0EE00B25017 /* PolarCoordinate.swift in Sources */,
 				951870582B34A0EE00B25017 /* JoystickShape.swift in Sources */,
 				957D52FA2B1FB31D00B48448 /* ContentView.swift in Sources */,
-				9518705B2B34A15300B25017 /* ControlPadMainView.swift in Sources */,
+				9518705B2B34A15300B25017 /* ClassicControlPadMainView.swift in Sources */,
 				951870632B34D99500B25017 /* JoystickForegroundView.swift in Sources */,
 				953CEE842B362266001F1337 /* BTDeviceServiceManager.swift in Sources */,
 				9518705F2B34B8F300B25017 /* JoystickView.swift in Sources */,
@@ -448,7 +501,9 @@
 				951870612B34D55000B25017 /* JoystickBackgroundView.swift in Sources */,
 				9523CB2D2B20FDDC00A07A6C /* BTDeviceCell.swift in Sources */,
 				95C233E32B221D7100EFCC75 /* ListBackgroundModifier.swift in Sources */,
+				951549BB2B7A844800756F36 /* GearboxKnob.swift in Sources */,
 				952F70882B26460E007F1A46 /* GetDeviceClass.swift in Sources */,
+				951549B52B7A6F8100756F36 /* RealControlPadMainView.swift in Sources */,
 				957ED2D62B2CF1F200CD264D /* Vibro.swift in Sources */,
 				951870552B34A0EE00B25017 /* CGPoint-Extension.swift in Sources */,
 				951870522B34A0EE00B25017 /* JoystickRecognizer.swift in Sources */,
@@ -458,6 +513,7 @@
 				9523CB2B2B20FA9900A07A6C /* BTDevicesViewModel.swift in Sources */,
 				95D2E7522B61ABAA00FA39FD /* PopupModeCell.swift in Sources */,
 				95290CDB2B40B81B00E6C894 /* MBProgressHUDRepresentable.swift in Sources */,
+				951549B92B7A840300756F36 /* GearboxView.swift in Sources */,
 				957D53232B1FC02C00B48448 /* RalewayFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
